@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+        <div class="balance-container">
+            <h2>Total Balance</h2>
+            <p id="balance">$0.00</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="transaction-form">
+            <h2>Add New Transaction</h2>
+            <form id="expense-form">
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" id="description" required placeholder="Enter description...">
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" required placeholder="Enter amount...">
+                    <small>Use negative (-) for expenses and positive (+) for income</small>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <button type="submit">Add Transaction</button>
+            </form>
+        </section>
+
+        <section class="transactions">
+            <h2>Transaction History</h2>
+            <div class="transactions-list" id="transactions-list">
+                <!-- Transactions will be added here dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Expense Tracker</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
